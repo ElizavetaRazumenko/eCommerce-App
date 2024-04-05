@@ -1,0 +1,27 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.header, .ul {
+  @extend %flex-row-center-between;
+}
+
+.header {
+  @include size(100%, 70px);
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.li {
+  margin-right: 40px;
+  padding-bottom: 3px;
+  font-size: 1rem;
+  color: var(--font-inactive);
+}
+
+.li_active {
+  padding-bottom: 1px;
+  color: var(--font-white);
+  border-bottom: 2px solid var(--font-gold);
+}

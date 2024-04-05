@@ -8,20 +8,26 @@
   --primary-black: #000000;
   --primary-white: #FFFFFF;
   --font-white: #D9D0D0;
+  --font-white-active:rgb(164, 161, 161);
+  --font-inactive: #686766;
+  --font-gold: #F1CDB3;
 
 }
 
 p {
   margin: 0;
+  color: var(--font-white);
+
 }
 
 a {
   font-weight: 500;
-  color: var(--primary-black);
+  color: var(--font-white);
   text-decoration: none;
 }
+
 a:hover {
-  color: var(--primary-black);;
+  color: var(--font-white-active);
 }
 
 html {
@@ -38,6 +44,6 @@ body {
   background-image: url(./assets/common/smoke.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 70%;
+  background-position: center;
+  background-size: 100%;
 }

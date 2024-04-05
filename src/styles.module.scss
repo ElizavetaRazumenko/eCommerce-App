@@ -1,5 +1,5 @@
-@import './styles/mixins.scss';
-@import './styles/placeholders.scss';
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
 
 #root {
   max-width: 1280px;
@@ -8,8 +8,8 @@
 
 .app_wrapper {
   @extend %flex-column;
-  width: 1280px;
-  height: 100%;
+  @extend %column-center;
+  @include size(1180px, 100%);
   background-size: cover;
   color: var(--font-white);
 }

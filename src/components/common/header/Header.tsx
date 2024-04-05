@@ -1,17 +1,18 @@
 import React from 'react';
-import { Logo } from '../../logo/Logo';
+import { Logo } from '../logo/Logo';
+import styles from './styles.module.scss';
 
 export const Header: React.FC = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
       <nav>
-        <ul>
-          <li>Main</li>
-          <li>Catalog</li>
-          <li>Profile</li>
-          <li>Basket</li>
-          <li>Login</li>
+        <ul className={styles.ul}>
+          <li className={`${styles.li} ${styles.li_active}`}>Main</li>
+          <li className={styles.li}>Catalog</li>
+          <li className={styles.li}>Profile</li>
+          <li className={styles.li}>Basket</li>
+          <li className={styles.li}>Login</li>
         </ul>
       </nav>
     </header>

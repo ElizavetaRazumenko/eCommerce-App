@@ -1,0 +1,39 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.title {
+  font-weight: 700;
+  font-size: 1.56rem;
+  margin-bottom: 25px; 
+}
+
+.link{
+  @extend %flex-row-start;
+  align-items: center;
+  margin-bottom: 25px; 
+}
+
+.icon {
+  @extend %bg-image;
+  margin-right: 10px;
+}
+
+.email {
+  @include size(25px, 20px);
+  background-image: url(../../../../../assets/common/email.png);
+}
+
+.number {
+  @include size(25px, 20px);
+  background-image: url(../../../../../assets/common/phone.png);
+}
+
+.content {
+  color: var(--font-white);
+  font-size: 1rem;
+  transition: .5s;
+
+  &:hover {
+    color: var( --font-white-active);
+  }
+}
