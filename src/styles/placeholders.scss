@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+%flex-row-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 %flex-row-center-between {
   display: flex;
   align-items: center;

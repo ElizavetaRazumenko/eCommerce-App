@@ -1,0 +1,13 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(100%, 100%);
+  @extend %flex-row-center-center;
+}
+
+.loader {
+  @include size(50px, 50px);
+  @extend %bg-image;
+  background-image: url(../../../assets/common/loader.gif);
+}

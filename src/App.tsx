@@ -1,11 +1,29 @@
 import React from 'react';
-import styles from './styles.module.scss';
-import { Header } from './components/common/header/Header';
-import { Footer } from './components/common/footer/Footer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { MainPage } from './components/main-page/MainPage';
+import { Layout } from './components/common/layout/Layout';
+import { CatalogPage } from './components/catalog-page/CatalogPage';
+import { ErrorPage } from './components/error-page/ErrorPage';
 
-export const App: React.FC = () => (
-  <div className={styles.app_wrapper}>
-    <Header />
-    <Footer />
-  </div>
-);
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <MainPage />,
+      },
+      {
+        path: 'catalog',
+        element: <CatalogPage />,
+      },
+      {
+        path: '*',
+        element: <ErrorPage />,
+      },
+    ],
+  },
+]);
+
+export const App: React.FC = () => <RouterProvider router={router} />;
