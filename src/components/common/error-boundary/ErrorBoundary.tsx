@@ -1,4 +1,5 @@
 import React, { ErrorInfo } from 'react';
+import styles from './styles.module.scss';
 
 type State = {
   hasError: boolean;
@@ -20,9 +21,9 @@ export class ErrorBoundary extends React.Component<
   public render() {
     if (this.state.hasError) {
       return (
-        <div>
-          <p>Something went wrong...</p>
-          <p>Please reload the page</p>
+        <div className={styles.wrapper}>
+          <p className={`${styles.title} title`}>Something went wrong...</p>
+          <p className="subtitle">Please reload the page</p>
         </div>
       );
     }

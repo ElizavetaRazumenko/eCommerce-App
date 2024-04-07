@@ -15,7 +15,7 @@ export const Location: React.FC = () => (
       className={styles.link}
       href="https://yandex.by/maps/10445/rome/house/ZUsYcwFnS0IPQFprfXR5eXVkZA==/?ll=12.567278%2C41.888970&z=17"
     >
-      <div className={styles.icon}></div>{' '}
+      <div className={styles.icon}></div>
       <p className={styles.address}>Rome, st. dei Chiclamini, 5</p>
     </a>
   </div>
