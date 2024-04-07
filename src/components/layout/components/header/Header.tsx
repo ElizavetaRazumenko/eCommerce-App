@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
       <nav>
         <div className={styles.links_container}>
           {PAGES_LINKS.map((link) => (
-            <NavigationLink to={link.to} content={link.content} />
+            <NavigationLink key={link.to} to={link.to} content={link.content} />
           ))}
         </div>
       </nav>

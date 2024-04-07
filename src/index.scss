@@ -5,8 +5,11 @@
 
   --bg-linear-from: #100f0f;
   --bg-linear-to: #232323;
+
   --primary-black: #000000;
-  --primary-white: #FFFFFF;
+  --primary-white: #D9D0D0;
+  --primary-grey: #393737;
+
   --font-white: #D9D0D0;
   --font-white-active:rgb(164, 161, 161);
   --font-inactive: #686766;
@@ -38,6 +41,11 @@ a {
 
 a:hover {
   color: var(--font-white-active);
+}
+
+button {
+  border: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 html {

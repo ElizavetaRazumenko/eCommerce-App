@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
       <Logo />
       <div className={styles.info_wrapper}>
         {COMPANY_INFORMATION.map((info) => (
-          <InfoBlock title={info.title} links={info.links} />
+          <InfoBlock key={info.title} title={info.title} links={info.links} />
         ))}
       </div>
     </footer>
