@@ -1,14 +1,3 @@
-@import 'src/styles/placeholders.scss';
-@import 'src/styles/mixins.scss';
-
-.header, .links_container {
-  @extend %flex-row-center-between;
-}
-
-.header {
-  @include size(100%, 70px);
-}
-
 .link {
   margin-right: 40px;
   padding-bottom: 3px;

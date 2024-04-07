@@ -41,7 +41,7 @@ a:hover {
 }
 
 html {
-  background: url(./assets/common/noise_transparent@2x.svg),
+  background: url(src/assets/common/noise_transparent@2x.svg),
   linear-gradient(to top left, var(--bg-linear-from), var(--bg-linear-to));
 }
 
@@ -51,7 +51,7 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(./assets/common/smoke.png);
+  background-image: url(src/assets/common/smoke.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

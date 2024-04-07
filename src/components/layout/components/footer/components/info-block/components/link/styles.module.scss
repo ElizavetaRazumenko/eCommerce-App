@@ -1,12 +1,6 @@
 @import 'src/styles/placeholders.scss';
 @import 'src/styles/mixins.scss';
 
-.title {
-  font-weight: 700;
-  font-size: 1.56rem;
-  margin-bottom: 25px; 
-}
-
 .link{
   @extend %flex-row-start;
   align-items: center;
@@ -18,14 +12,19 @@
   margin-right: 10px;
 }
 
-.email {
-  @include size(25px, 20px);
-  background-image: url(../../../../../assets/common/email.png);
+.location {
+  @include size(15px, 24px);
+  background-image: url(src/assets/common/location.png);
 }
 
-.number {
+.email {
   @include size(25px, 20px);
-  background-image: url(../../../../../assets/common/phone.png);
+  background-image: url(src/assets/common/email.png);
+}
+
+.telephone {
+  @include size(25px, 20px);
+  background-image: url(src/assets/common/phone.png);
 }
 
 .content {

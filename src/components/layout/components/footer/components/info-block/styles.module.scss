@@ -1,0 +1,12 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  margin-right: 100px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.56rem;
+  margin-bottom: 25px; 
+}

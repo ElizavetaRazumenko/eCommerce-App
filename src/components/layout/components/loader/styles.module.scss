@@ -9,5 +9,5 @@
 .loader {
   @include size(50px, 50px);
   @extend %bg-image;
-  background-image: url(../../../assets/common/loader.gif);
+  background-image: url(src/assets/common/loader.gif);
 }

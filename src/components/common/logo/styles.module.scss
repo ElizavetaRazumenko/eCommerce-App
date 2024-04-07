@@ -26,6 +26,6 @@
 .parsley {
   @include size(41px, 28px);
   @extend %bg-image;
-  background-image: url(../../../assets/common/parsley.png);
+  background-image: url(src/assets/common/parsley.png);
   margin-left: 3px;
 }
