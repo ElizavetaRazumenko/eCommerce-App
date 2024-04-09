@@ -1,0 +1,26 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(100%, auto);
+  @extend %flex-row-start;
+  justify-content: flex-start;
+}
+
+.content_wrapper {
+  margin: 40px 0 0 40px;
+  width: 720px;
+}
+
+.content {
+  margin-top: 40px;
+  font-weight: 700;
+  width: 580px;
+}
+
+.pizza {
+  @include size(485px, 514px);
+  @extend %bg-image;
+  background-image: url(src/assets/main-page/slice.png);
+  margin-right: 40px;
+}

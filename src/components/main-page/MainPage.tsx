@@ -1,6 +1,13 @@
 import React from 'react';
-// import styles from './styles.module.scss';
+import { Welcome } from './components/welcome/Welcome';
+import { PizzasCollection } from './components/pizzas-collection/PizzasCollection';
+import styles from './styles.module.scss';
 
 export const MainPage: React.FC = () => {
-  return <div>Main Page</div>;
+  return (
+    <div className={styles.wrapper}>
+      <Welcome />
+      <PizzasCollection />
+    </div>
+  );
 };
