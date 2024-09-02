@@ -1,0 +1,14 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.footer {
+  @include size(100%, auto);
+  @extend %flex-row-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px 20px;
+}
+
+.info_wrapper {
+  display: flex;
+}

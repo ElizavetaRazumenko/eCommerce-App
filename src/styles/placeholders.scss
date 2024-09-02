@@ -1,0 +1,45 @@
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%column-center-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+%flex-row-start {
+  display: flex;
+  align-items: start;
+}
+
+%flex-row-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-row-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-row-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%bg-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+}

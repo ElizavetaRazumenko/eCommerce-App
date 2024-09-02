@@ -1,0 +1,8 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(100%, auto);
+  @extend %flex-column;
+  flex-grow: 1;
+}

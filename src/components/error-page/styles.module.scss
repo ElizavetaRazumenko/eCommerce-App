@@ -1,0 +1,25 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(500px, auto);
+  @extend %column-center-center;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  font-size: 12rem;
+  font-weight: 700;
+}
+
+.parsley {
+  @include size(160px, 190px);
+  @extend %bg-image;
+  position: absolute;
+  bottom: 55px;
+  right: 20px;
+  background-image: url(src/assets/error-page/parsley-primary.png);
+}

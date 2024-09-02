@@ -1,0 +1,31 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(auto, 50px);
+  @extend %flex-column;
+  align-items: start;
+}
+
+.top_string_wrapper {
+  @extend %flex-row-center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 38px;
+}
+
+.subtitle {
+  font-size: 0.625rem;
+}
+
+.parsley {
+  @include size(41px, 28px);
+  @extend %bg-image;
+  background-image: url(src/assets/common/parsley.png);
+  margin-left: 3px;
+}

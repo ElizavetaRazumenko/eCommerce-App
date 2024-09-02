@@ -1,0 +1,30 @@
+@import 'src/styles/placeholders.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+  @include size(100%, auto);
+  @extend %flex-row-center-center;
+  overflow-x: hidden;
+  margin: 50px 0;
+}
+
+.cards_wrapper {
+  @include size(820px, auto);
+  @extend %flex-row-center-center;
+  overflow-x: hidden;
+}
+
+.card {
+  @include size(30px, 52px);
+  @extend %bg-image;
+}
+
+.card_left {
+  background-image: url(src/assets/main-page/carousel-left.png);
+  margin-right: 50px;
+}
+
+.card_right {
+  background-image: url(src/assets/main-page/carousel-right.png);
+  margin-left: 50px;
+}

@@ -1,0 +1,12 @@
+.link {
+  margin-right: 40px;
+  padding-bottom: 3px;
+  font-size: 1rem;
+  color: var(--font-inactive);
+}
+
+.link_active {
+  padding-bottom: 1px;
+  color: var(--font-white);
+  border-bottom: 2px solid var(--font-gold);
+}
